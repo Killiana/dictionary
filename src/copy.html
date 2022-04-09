@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function showFahr(event) {
+      //   event.preventDefault();
+      //   let fahrTemp = Math.round((celsTemp * 9) / 5 + 32);
+      //   let tempEl = document.querySelector("#temperature");
+      //   tempEl.innerHTML = fahrTemp;
+      // }
+      // function showCels(event) {
+      //   event.preventDefault();
+      //   let tempEl = document.querySelector("#temperature");
+      //   tempEl.innerHTML = Math.round(celsTemp);
+      // }
+
+      // let celsTemp = null;
+
+      // let fahrLink = document.querySelector("#fahr-link");
+      // fahrLink.addEventListener("click", showFahr);
+      // let celsLink = document.querySelector("#cels-link");
+      // celsLink.addEventListener("click", showCels);
+
+      // search("Sofia");
+
+      // let sum = 0;
+      // let i = 1;
+      // while (i <= 10) {
+      //   sum += i;
+      //   i++;
+      //   console.log(i);
+      // }
+
+      // function odd(num) {
+      //   let sum = 0;
+
+      //   while (num >= 1) {
+      //     num--;
+      //     if (num % 2 === 1) {
+      //       sum += num;
+      //     }
+      //   }
+      //   return sum;
+      // }
+      // console.log(odd(6));
+
+      // function crazy(str) {
+      //   let bla = "";
+      //   for (let i = 0; i < str.length; i++) {
+      //     if (i % 2 === 0) {
+      //       bla += str[i];
+      //     } else {
+      //       bla += str[i].toUpperCase();
+      //     }
+      //   }
+      //   return bla;
+      // }
+
+      // for (let i = 0; i < 10; i++) {
+      //   for (let j = 0; j < 5; j++) {
+      //     console.log("the coordinates are " + i + j);
+      //   }
+      // }
+
+      // function find(heystack, needle, limit) {
+      //   let letters = "";
+      //   for (let i = 0; i < heystack.length; i++) {
+      //     if (heystack[i] === needle) {
+      //       for (let j = 0; j < limit; j++) {
+      //         let char = heystack[i + j + 1];
+      //         letters += char;
+      //       }
+      //       return letters;
+      //     }
+      //   }
+      // }
+      // console.log(find("hello", "e", 2));
+
+      // function odd(arr) {
+      //   let arr1 = [...arr];
+      //   let now = [];
+      //   let now1 = [];
+      //   let now2 = [];
+      //   for (let i = 0; i < arr1.length; i++) {
+      //     if (arr[i] % 2 === 0) {
+      //       now.push(arr[i]);
+      //     } else {
+      //       now1.push(arr[i]);
+      //     }
+      //   }
+      //   console.log(now);
+      //   console.log(now1);
+      //   now2.push(now);
+      //   console.log(now2);
+      //   now2.push(now1);
+      //   console.log(now2);
+      // }
+      // odd([1, 2, 3, 4, 5]);
+
+      // function grid(col, row) {
+      //   let array = [];
+
+      //   for (let i = 0; i < row; i++) {
+      //     array[i] = [];
+      //     for (let j = 0; j < col; j++) {
+      //       array[i][j] = j + 1;
+      //     }
+      //   }
+
+      //   return array;
+      // }
+      // console.log(grid(3, 4));
+
+      // function flattener(arr) {
+      //   let bla = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     // let inner = arr[i].length;
+      //     if (arr[i].length > 1) {
+      //       for (let j = 0; j < arr[i].length; j++) {
+      //         bla.push(arr[i][j]);
+      //       }
+      //     } else {
+      //       bla.push(arr[i]);
+      //     }
+      //   }
+      //   return bla;
+      // }
+      // console.log(flattener([1, [2, 3, 5], 4, 6]));
+      // let myZoo = [
+      //   ["King Kong", ["gorilla", 42]],
+      //   ["Nemo", ["fish", 5]],
+      //   ["Punxsutawney Phil", ["groundhog", 11]],
+      // ];
+
+      // function zoo(arr) {
+      //   let bla = [];
+      //   let now = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     let str = `${arr[i][0]} the ${arr[i][1][0]} is ${arr[i][1][1]}.`;
+      //     bla.push(str);
+      //   }
+      //   return bla;
+      // }
+      // console.log(zoo(myZoo));
+
+      // function remove(original, num) {
+      //   bla = [];
+      //   for (let i = 0; i < original.length; i++) {
+      //     for (let j = 0; j < num; j++) {
+      //       original[i].pop();
+      //     }
+      //   }
+      //   return original;
+      // }
+      // console.log(
+      //   remove(
+      //     [
+      //       [1, 2, 3],
+      //       [1, 2, 3],
+      //       [1, 2, 3],
+      //       [1, 2, 3],
+      //     ],
+      //     2
+      //   )
+      // );
+      // function displayTemp(response) {
+      //   console.log(response.data);
+      //   let tempEl = document.querySelector("#temperature");
+      //   let cityEl = document.querySelector("#city");
+      //   let description = document.querySelector("#description");
+      //   let humidity = document.querySelector("#humidity");
+      //   let wind = document.querySelector("#wind");
+      //   let date = document.querySelector("#date");
+      //   let image = document.querySelector("#image");
+      //   image.setAttribute(
+      //     "src",
+      //     ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      //   );
+      //   date.innerHTML = formatDate(response.data.dt * 1000);
+      //   humidity.innerHTML = response.data.main.humidity;
+      //   wind.innerHTML = Math.round(response.data.wind.speed);
+      //   tempEl.innerHTML = Math.round(response.data.main.temp);
+      //   cityEl.innerHTML = response.data.name;
+      //   description.innerHTML = response.data.weather[0].description;
+      //   celsTemp = response.data.main.temp;
+      // }
+      function displayWord(response) {
+        console.log(response.data);
+      }
+
+      function handleSearch(event) {
+        event.preventDefault();
+        let input = document.querySelector("#input");
+        alert(input.value);
+      }
+
+      let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/sunset`;
+
+      // let form = document.querySelector("#search-form");
+      // form.addEventListener("submit", handleSearch);
+
+      axios.get(apiUrl).then(displayWord);
+    </script>
+  </body>
+</html>
