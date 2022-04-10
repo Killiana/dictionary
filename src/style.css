@@ -1,3 +1,77 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffe9a;
+  min-height: 100vh;
+}
 h1 {
-  color: red;
+  font-size: 25px;
+  font-weight: 500px;
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  background-color: #fcffc1;
+  border-radius: 7px;
+  padding: 28px 45px;
+}
+.search input {
+  padding: 10px 42px;
+}
+.container .search {
+  margin: 25px 20px;
+  position: relative;
+}
+
+.search i {
+  left: 18px;
+  font-size: 1;
+  pointer-events: none;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search input:focus ~ i {
+  color: blue;
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 35px 10px 5px;
+
+  padding: 10px 20px;
+  justify-content: space-between;
+  border: 1px solid gray;
+  background-color: #fffe9a;
+}
+
+ul .word p {
+  font-size: 25px;
+  font-weight: 500;
+}
+ul .word span {
+  font-size: 15px;
+  color: gray;
+}
+ul .word i {
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+}
+.container li .details p {
+  font-size: 17px;
+  color: green;
+  margin-bottom: 5px;
+}
+.container li .details span {
+  font-size: 17px;
+  color: pink;
+}
+
+.synonyms .details .list span {
+  margin-right: 5px;
+  cursor: pointer;
 }

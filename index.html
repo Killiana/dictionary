@@ -23,54 +23,53 @@
   <body>
     <div class="container">
       <h1>Dictionary</h1>
-      <h2>Look up a word</h2>
+
       <div class="search">
-        <input
-          type="search"
-          autofocus="true"
-          id="input"
-          placeholder="Type a word.."
-          class="form-control"
-        />
-        <i class="fas fa-search"></i>
-        <span class="material-icons">close</span>
-        </span>
+        <form>
+          <input
+            type="search"
+            autofocus="true"
+            id="input"
+            placeholder="Type a word.."
+            class="form-control"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p id="word">happy</p>
+            <span id="type">adjective /'hapi</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="example">
+            <div class="details">
+              <p>Meaning</p>
+              <span>Feeling or showing pleasure</span>
             </div>
-            <ul>
-              <li class="word">
-                <div class="details">
-                  <p>happy</p>
-                  <span>adjective /'hapi</span>
-                </div>
-                <i class="fas fa-volume-up"></i>
-              </li>
-              <div class="content">
-                <li class="example">
-                  <div class="details">
-                    <p>Meaning</p>
-                    <span>Feeling or showing pleasure</span>
-                  </div>
-                </li>
-                <li class="example">
-                  <div class="details">
-                    <p>Example</p>
-                    <span>Iliyana is not happy</span>
-                  </div>
-                  
-                </li>
-                <li class="synonyms">
-                  <div class="details">
-                    <p>Synonyms</p>
-                    <div class="list">
-                      <span>glad</span>
-                      <span>content</span>
-                      <span>jolly</span>
-                      <span>cheery</span>
-                    </div>
-                  </div>
-                </li>
+          </li>
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>Iliyana is not happy</span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list">
+                <span>glad</span>
+                <span>content</span>
+                <span>jolly</span>
+                <span>cheery</span>
               </div>
-            </ul>
+            </div>
+          </li>
+        </div>
+      </ul>
     </div>
   </body>
   <script src="src/index.js"></script>
